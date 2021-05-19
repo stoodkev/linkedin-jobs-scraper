@@ -55,7 +55,7 @@ export class LoggedInRunStrategy extends RunStrategy {
     private static _loadJobDetails = async (
         page: Page,
         jobId: string,
-        timeout: number = 2000,
+        timeout: number = 20000,
     ): Promise<ILoadResult> => {
         const pollingTime = 100;
         let elapsed = 0;
@@ -104,7 +104,7 @@ export class LoggedInRunStrategy extends RunStrategy {
     private static _paginate = async (
         page: Page,
         paginationIndex: number,
-        timeout: number = 2000,
+        timeout: number = 20000,
     ): Promise<ILoadResult> => {
         const pollingTime = 100;
         const paginationBtnSelector = selectors.paginationBtn(paginationIndex);
@@ -183,7 +183,7 @@ export class LoggedInRunStrategy extends RunStrategy {
     private static _paginate_new = async (
         page: Page,
         tag: string,
-        timeout: number = 2000,
+        timeout: number = 20000,
     ): Promise<ILoadResult> => {
         // Check if there is a new page to load
         try {
