@@ -460,7 +460,7 @@ export class LoggedOutRunStrategy extends RunStrategy {
 
                 // Emit data
                 this.scraper.emit(events.scraper.data, {
-                    query: query.query || "",
+                    query: query,
                     location: location,
                     jobId: jobId!,
                     jobIndex: jobIndex,
