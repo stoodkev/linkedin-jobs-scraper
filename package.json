@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rm -fr build",
     "build": "npm run clean && tsc",
-    "postinstall": "tsc --outDir ./build",
+    "postinstall": "tsc --project tsconfig.json",
     "test-logged-in": "DEBUG=scraper:info jest logged.in.test.ts",
     "test-logged-out": "DEBUG=scraper:info jest logged.out.test.ts"
   },
