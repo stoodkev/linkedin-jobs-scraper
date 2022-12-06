@@ -167,7 +167,7 @@ class LinkedinScraper extends Scraper {
 
             // Add default location if none provided
             if (!query?.options?.locations?.length) {
-               // query.options.locations = ["Worldwide"];
+               query.options.locations = [""];
             }
 
             const errors = validateQuery(query);
