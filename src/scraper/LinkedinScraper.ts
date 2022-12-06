@@ -97,9 +97,9 @@ class LinkedinScraper extends Scraper {
             url.searchParams.append("keywords", query);
         }
 
-        if (location && location.length) {
+        //if (location && location.length) {
             url.searchParams.append("location", location);
-        }
+        //}
 
         if (options && options.filters) {
             if (options.filters.companyJobsUrl) {
