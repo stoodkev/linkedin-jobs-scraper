@@ -231,9 +231,9 @@ export class LoggedOutRunStrategy extends RunStrategy {
         let tag = `[${query.query}][${location}]`;
         let processed = 0;
 
-        logger.info(tag, "Opening", url);
+        logger.info(tag, "Opening", url+'&geoId=92000000');
 
-        await page.goto(url, {
+        await page.goto(url+'&geoId=92000000', {
             waitUntil: 'load',
         });
 
